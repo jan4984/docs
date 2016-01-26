@@ -26,29 +26,37 @@ func main(){
 	avgAcc := flag.Int("aa", 2000, "make avrage of aa sql consume times to print one message")
 
 	flag.Parse()
+	//配置mysql
 	db,err:= sql.Open("mysql", *msqlAddr)
 	if err != nil {
 		log.Fatalln(err)
 	}
 	defer db.Close()
+	//测试mysql
 	err = db.Ping()
 	if err != nil {
 		log.Fatalln(err)
 	}
-
+	
+	//设置连接池最大数目
 	db.SetMaxOpenConns(*conCount + 10)
 
 	for i:=0;i<*conCount;i++{
+		//启动线程
 		go func(i int){
 			c := 0
 			avg := int64(0)
 			for{
+				//记录当前时间
 				start := time.Now()
+				//插入动作
 				_, err := db.Exec(*querySQL1, start.UnixNano())
 				if err != nil{
 					log.Fatalln(err)
 				}
+				//记录当前时间
 				end := time.Now()
+				//累加插入耗时 end - start纳秒 => 毫秒
 				avg += int64(end.Sub(start).Nanoseconds()) / 1000 / 1000
 
 				start = time.Now()
@@ -69,6 +77,8 @@ func main(){
 
 		}(i)
 	}
+	
+	//主线程死等(100000小时)
 	time.Sleep(time.Hour * time.Duration(100000))
 }
 ```
