@@ -25,6 +25,10 @@ js引擎；js访问OS资源（内存、文件系统、网络）的API实现
 
 js引擎；各种语言的互交互（函数调用、数据类型转换、包装）
 
+### 预编译
+
+* Babel
+
 ### JavaScript
 * primitives
 
