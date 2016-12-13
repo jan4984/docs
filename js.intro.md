@@ -74,3 +74,10 @@ const e=[...d,4,5];//e=[1,2,3,4,5]
 * concat join pop push slice sort filter shift unshift splice map forEach find findIndex lastIndexOf reduce 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+* json
+
+```javascript
+JSON.stringify({a:5});//{"a":5}
+cosnt v = JSON.parse('{"a":5}');//v={a:5}
+```
