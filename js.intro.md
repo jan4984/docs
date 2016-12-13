@@ -28,7 +28,7 @@ js引擎；各种语言的互交互（函数调用、数据类型转换、包装
 ### JavaScript
 * primitives
 
-1.2
+1.2 
 
 "a"
 
@@ -44,7 +44,29 @@ a=>5
 
 (a,b)=>{console.log(a);return b;}
 
+NaN undefined null
 
 * closures
 
+const var let
+
 https://jsfiddle.net/v7gjv/?utm_source=website&utm_medium=embed&utm_campaign=v7gjv
+
+* && ||
+
+const a = a||{v:'init value'};
+const b = a && a.v;
+
+* a[] a.b a['b'] delete(a.b)
+
+* export class extends super new constructor() bind apply arguments
+
+* destructuring spread
+
+const a=5; const b={a};//b={a:5}
+
+const {a}=b;//a=b.a
+
+const c={...b,v:'dd'};//c={a:5,v:'dd'}
+
+const d=[1,2,3];const e=[...d,4,5];//e=[1,2,3,4,5]
