@@ -27,7 +27,7 @@ js引擎；各种语言的互交互（函数调用、数据类型转换、包装
 
 ### 预编译
 
-* Babel
+* Babel Webpack
 
 ### JavaScript
 * primitives
