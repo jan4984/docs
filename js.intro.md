@@ -28,45 +28,45 @@ js引擎；各种语言的互交互（函数调用、数据类型转换、包装
 ### JavaScript
 * primitives
 
-1.2 
+```javascript
+var a=1.2;
+var a="a";
+var a='a';
+var a=`hello"fd
+fd
 
-"a"
-
-'a'
-
-\`hello"fds'123sdf'\`
-
+s'123sdf'`;
 function a(){}
-
-function(p){}
-
-a=>5
-
-(a,b)=>{console.log(a);return b;}
-
-NaN undefined null
-
+var a = function(p){}
+var a=v=>5；
+var c=(a,b)=>{console.log(a);return b;};
+var a=NaN;
+var a=undefined;
+var a=null;
+```
 * closures
-
 const var let
 
 https://jsfiddle.net/v7gjv/?utm_source=website&utm_medium=embed&utm_campaign=v7gjv
 
 * && ||
 
+```javascript
 const a = a||{v:'init value'};
 const b = a && a.v;
+```
+* array & object
 
-* a[] a.b a['b'] delete(a.b)
+a[] a.b a['b'] delete(a.b)
 
 * export class extends super new constructor() bind apply arguments
 
 * destructuring spread
 
-const a=5; const b={a};//b={a:5}
-
-const {a}=b;//a=b.a
-
+```javascript
+let a=5; const b={a};//b={a:5}
+{a}=b;//a=b.a
 const c={...b,v:'dd'};//c={a:5,v:'dd'}
-
-const d=[1,2,3];const e=[...d,4,5];//e=[1,2,3,4,5]
+const d=[1,2,3];
+const e=[...d,4,5];//e=[1,2,3,4,5]
+```
