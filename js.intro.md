@@ -1,4 +1,4 @@
-### engine
+## engine
 * interpreter
 
 x86 CPU是x86机器语言的解释器
@@ -11,7 +11,7 @@ x86 CPU是x86机器语言的解释器
 
 http://softwareengineering.stackexchange.com/questions/246094/understanding-the-differences-traditional-interpreter-jit-compiler-jit-interp/269878#269878
 
-### 运行环境
+## 运行环境
 * browser
 
 HTML/CSS解析渲染；其他扩展；菜单/收藏等GUI；js引擎；js语言访问HTML等扩展的API实现
@@ -25,11 +25,11 @@ js引擎；js访问OS资源（内存、文件系统、网络）的API实现
 
 js引擎；各种语言的互交互（函数调用、数据类型转换、包装）
 
-### 预编译
+## 预编译
 
 * Babel Webpack
 
-### JavaScript
+## JavaScript
 * primitives
 
 ```javascript
@@ -114,3 +114,10 @@ asyncGet(path).then(res=>this.loadJson(res));
 ```
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+
+## Why JavaScript
+
+* corss platforms by Browser
+* more and more capbilities by Browser(3D/Audio/Video/Location/VR/service worker/...)
+* more and more frameworks & tools by Companies(Google/MS/FB/Alibaba/... & start-ups)
