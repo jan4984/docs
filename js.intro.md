@@ -70,3 +70,7 @@ const c={...b,v:'dd'};//c={a:5,v:'dd'}
 const d=[1,2,3];
 const e=[...d,4,5];//e=[1,2,3,4,5]
 ```
+
+* concat join pop push slice sort filter shift unshift splice map forEach find findIndex lastIndexOf reduce 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
