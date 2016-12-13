@@ -1,4 +1,4 @@
-### engine
+### engine v8
 * interpreter
 
 x86 CPU是x86机器语言的解释器
@@ -20,3 +20,31 @@ HTML/CSS解析渲染；其他扩展；菜单/收藏等GUI；js引擎；js语言�
 * nodejs
 
 js引擎；js访问OS资源（内存、文件系统、网络）的API实现
+
+* Nashorn(JVM) IronJS(.net) v8(c++) JavaScriptCore(iOS-ObjectiveC&Swift) ...
+
+js引擎；各种语言的互交互（函数调用、数据类型转换、包装）
+
+### JavaScript
+* primitives
+
+1.2
+
+"a"
+
+'a'
+
+\`hello"fds'123sdf'\`
+
+function a(){}
+
+function(p){}
+
+a=>5
+
+(a,b)=>{console.log(a);return b;}
+
+
+* closures
+
+https://jsfiddle.net/v7gjv/?utm_source=website&utm_medium=embed&utm_campaign=v7gjv
