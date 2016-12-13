@@ -81,3 +81,32 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 JSON.stringify({a:5});//{"a":5}
 cosnt v = JSON.parse('{"a":5}');//v={a:5}
 ```
+
+* Promise
+
+保持异步调用时的业务代码组织
+```javascript
+function asyncGet(url){
+    return new Promise((resolve, reject)=> {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onload = ()=>{
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200 || xhr.status === 0) {//status 0 for local file
+                    resolve(xhr.responseText);
+                } else {
+                    console.log('get', url, 'failed:', xhr.statusText);
+                }
+            }
+        };
+        xhr.onerror = function (e) {
+            console.log('get', url, 'failed:', xhr.statusText);
+            reject(xhr.statusText);
+        };
+        xhr.send(null);
+    });
+}
+asyncGet(path).then(res=>this.loadJson(res));
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
