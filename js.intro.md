@@ -118,7 +118,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ## Why JavaScript
 
-* corss platforms by Browser
+* corss platforms with **GUI** by Browser
 * live update by Web
 * more dynamic with interpreter at runtime
 * more and more capbilities by Browser(3D/Audio/Video/Location/VR/service worker/...)
